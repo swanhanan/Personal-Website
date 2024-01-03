@@ -5,19 +5,34 @@ body{
 }
 .maincontainer{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 20% 80%;
+    grid-auto-flow: column;
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #B4D4FF;
+    font-family: 'Roboto Slab', serif;
+    color:#09194d;
+    background-color: #BFCFE7;
     height: 100vh;
+    padding-left: 0.5em;
 }
+.maintitle{
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 100px;
+} 
 .menubar{
     display: flex;
     flex-direction: column;
     gap:1rem;
+    font-weight: 200;
+    font-size: 1.5em;
+    text-shadow: #030a22;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .content{
     background-color: #11235A;
@@ -25,12 +40,29 @@ body{
 }
 
 .backgroundimg{
+    display: flex;
     width: 100%;
     height: 100%;
-    margin: 0%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
-    color: white;
-    text-align: center;
+    
 }
-
+.introbox{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.title{
+    color: white;
+    font-weight: 600;
+    font-size: 3.5em;
+    margin-bottom: 0.3em;
+}
+.subtitle{
+    color: #09194d;
+    font-weight: 600;
+    font-size: 2em;
+    flex-basis: 50px;
+}
