@@ -1,0 +1,42 @@
+html, body {
+    margin: 0px !important;
+  }
+  
+  #gallery-container{
+    width:75%;
+    margin: auto;
+    padding-top:40px;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  #thumbnails{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:30%;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+    padding:5px;
+  }
+  
+  .thumbnail{
+    display:block;
+    margin:auto;
+    border: transparent 5px solid;
+    margin:5px;
+    width: 300px;
+    height: 300px;
+  
+  }
+  
+  @media only screen and (max-width: 858px) {
+    #main-container {
+      grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    }
+  }
+  
